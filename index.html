@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;400;500;600;700;900&family=Noto+Serif+KR:wght@50; 100;200;300;500;700&display=swap" rel="stylesheet">
+		
+		<style type="text/css">
+			body, section, img, h1, p {margin: 0;}
+			body {background-color: black;  }
+			section {margin: auto; color: white; background-color: black;  word-break: keep-all; width: 1518px ; overflow:hidden; }
+			img{display: block; width: 100%;}
+			h1 {font-family: 'Noto Sans KR', sans-serif; font-weight: 600; 
+				color: white; text-align: center;padding-top: 230px; padding-bottom: 20px; font-size: 2.5em;}
+			
+			p{font-family: 'Noto Sans KR', serif; font font-weight: 50; color: white; line-height: 2.2; font-size: 1em; word-spacing: 0px;
+				word-break: keep-all; text-align: center; padding-top: 50px; 
+				padding-bottom: 400px;}
+
+			.black {background: black;}
+			.row {width: 1200px; margin:auto; position: relative;}
+			.row1 {width: 1200px; margin:auto; font-size: 0.9em;}
+			.row2{padding-top: 150px; padding-bottom: 100px; background: black;}
+			.row3{padding-top: 250px; padding-bottom: 0px; background: black;}
+			.row4{padding-top: 200px; padding-bottom: 0px; background: black;}
+			.row5{ text-align: left; font-size: 1.4em; padding-top: 120px;line-height: 2; }
+			.row6{ text-align: left; font-size: 1.2em;  margin-left: 650px 
+				margin bottom 200px}
+			.row7{padding-top: 250px; padding-bottom: 380px; background: black; width: 1250px;}
+			.row8{font-size: 1.5em; line-height: 1.5; font-weight:500 ;}
+			.row9{padding-top: 200px; padding-bottom: 200px; background: black; }
+			.row10{padding-top: 0px; padding-bottom: 800px; background: black; }
+			.row11{padding-top: 0px; padding-bottom: 1000px; background: black; }
+
+			
+			.relative{position: relative;}
+			.absolute {display: block; position: absolute;}
+
+			.text {text-align: left;}
+
+			@keyframes goback{ from { left: 200% } to { right: 100% } } 
+			@keyframes goback2{ to { left: -5%} }
+			
+			@keyframes goback3{ from{ top: 200% } }
+			@keyframes goback4{ from{ top: -5% } }
+
+			@keyframes goback5{ from { right: 300% } to { left: 30% } }
+
+			@keyframes goback6{ from{ top: -700%  } }
+			@keyframes goback7{ to { left: 10%} }
+			@keyframes goback8{ to { left: 5%} }
+			@keyframes goback9{ to { left: 500% } } 
+			@keyframes goback10{ from{ top: 500%  } }
+			@keyframes goback11{ to { left: -20%} }
+			@keyframes goback12{ from{ top: 300%  } }
+
+			
+			@keyframes stay{ 0%{opacity: 0;} 100% {opacity: 100%;}}
+			
+
+			@keyframes jump{0%{} 100%{transform: rotate3d(0,1,0,360deg); } }
+			@keyframes jump2{0%{} 100%{transform: rotate(360deg); } }
+			
+			.sticker1 { left: 930px; width: -300px; top :-900px; opacity:70%;
+					width: 35%; animation: goback 2s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker1_1 { left: 30px; width: -300px; top :-400px; width: 40%;
+						animation: stay 2.5s forwards infinite;}
+			.sticker1_2 { left: -300px; width: -300px; top :-640px; width: 8%;
+					animation: goback2 2s forwards cubic-bezier(.2,.6,.41,.8)infinite;}
+			.sticker1_3 { left: -300px; width: -300px; top :-550px; width: 3%;
+					animation: goback2 2s forwards cubic-bezier(.2,.6,.41,.8)
+					infinite}
+			
+			
+			
+			.sticker2 { left: 1100px; width: -300px; top :-420px; width: 0.5%; height: 150%; animation: stay 3s forwards infinite; z-index: 100;}
+			.sticker2_1 { left: 950px; width: -300px; top :600px; width: 0.3%; opacity:70% ; animation: goback3 3s forwards infinite;}
+			.sticker2_2 { left: 900px; width: -300px; top :0px; opacity:70%; 
+				width: 35%; animation: goback 4s infinite cubic-bezier(.2,.6,.41,.8); }
+			.sticker2_3 { left: 900px; width: -300px; top :60px; opacity:70%; width: 12%; animation: goback 4s infinite cubic-bezier(.2,.6,.41,.8);}
+			
+			.sticker2_4 { left: 210px; width: -300px; top :20px; width: 0.5%; height: 60% ;animation: goback3 3.5s forwards infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker2_5 { left: -150px; width: -300px; top :200px; width: 30%;animation: stay 5s forwards infinite;}
+			.sticker2_6 { left: -150px; width: -300px; top :240px; width: 25%;animation: stay 5s forwards infinite;}
+			.sticker2_7 {animation: stay 8s forwards infinite;}
+			
+			
+			.sticker3 { left: 210px; width: -300px; top :210px; text-align: left;}
+			.sticker3_1 { left: 400px; width: -300px; top :210px; text-align: left;}
+			.sticker3_2 { left: 1050px; width: -300px; top :230px;  width: 9%; height: 50%;
+				animation: stay 7s forwards infinite;}
+			.sticker3_3 { left: 10px; width: -300px; top :230px;  width: 9%; height: 50%;
+			animation: stay 7s forwards infinite;}
+			
+			
+
+			.sticker4 { left: 1000px; width: -300px; top :190px; text-align: left;}
+			.sticker4_1 { left: 400px; width: -300px; top :120px; width: 74%;}
+			.sticker4_2 { left: -100px; width: -300px; top :460px; width: 8%;animation: stay 4s forwards infinite;}
+			.sticker4_3 { left: -150px; width: -300px; top :590px; width: 3%;animation: stay 1s forwards infinite;}
+			.sticker4_4 { left: -300px; width: -300px; top :730px; width: 40%; animation: goback5 3s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker4_5 { left: 930px; width: -300px; top :220px; opacity:70%; width: 35%;
+				animation: goback 2.5s infinite cubic-bezier(.2,.6,.41,.8);}
+			
+			.sticker4_6 { left: -700px; width: -300px; top :950px; width: 30%;
+				animation: goback2 5s forwards cubic-bezier(.2,.6,.41,.8) infinite}
+			.sticker4_7 { text-align: left; font-size: 1.7em; left: 1000px; width: -300px; top :0px; line-height: 2; font-weight: 600;}
+
+			
+		
+			.sticker5 { left: -70px; width: -300px; top :-10px; width: 58%;  }
+			.sticker5_1 { left: 870px; width: -300px; top :150px; opacity:70%; width: 40%;
+			animation: goback 3s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker5_2 { left: 1050px; width: -100px; top :-220px; width: 0.5%; height: 200%;
+			animation: goback3 4s forwards infinite;}
+			.sticker5_3 { left: 870px; width: -300px; top :210px; opacity:70%; width: 12%;
+			animation: goback 3s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker5_4 { text-align: left; font-size: 1.4em; left: 660px; width: -300px; top :250px; line-height: 2;}
+			.sticker5_5 {left: 350px; width: -300px; top :650px; text-align: left;}
+
+			
+			
+			.sticker6{left: 280px; width: -300px; top :-1100px; width: 0.5%; height: 100%;
+					animation: goback6 3s forwards infinite;}
+			.sticker6_1{left: -400px; width: -300px; top :-930px; width: 30%;
+					animation: goback2 2.5s forwards cubic-bezier(.2,.6,.41,.8) infinite}
+			
+			.sticker6_2 { left: 1000px; width: -300px; top :100px; width: 8%;
+					animation: goback2 4s forwards cubic-bezier(.2,.6,.41,.8) infinite}
+			.sticker6_3 { text-align: left; font-size: 1.4em; left: 100px; width: -300px; top :200px; line-height: 2;}
+
+			
+
+			.sticker7 { left: 0px; width: -300px; top :-200px; width: 8%; height: 200%;
+					animation: goback6 4s forwards infinite;}
+			.sticker7_1 { text-align: left; font-size: 1.7em; left: 250px; width: -300px; top :200px; line-height: 2; font-weight: 600;}
+			.sticker7_2 { left: 930px; width: -300px; top :100px; opacity:70%;
+					width: 35%; animation: goback 3s infinite cubic-bezier(.2,.6,.41,.8);}
+
+			
+			.sticker8 { left: 630px; width: -300px; top :-150px; width: 50%;}
+			.sticker8_1 { left: -200px; width: -300px; top :0px; width: 8%; animation: goback7 3s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker8_2 { left: 150px; width: -300px; top :410px; width: 40%;
+					animation: stay 2.5s forwards infinite;}
+			.sticker8_3 { left: -300px; width: -300px; top :490px; width: 40%; opacity: 70%;
+			 animation: goback8 4s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker8_4 { text-align: left; font-size: 2em; left: 20px; width: -300px; top :150px; line-height: 1.5; font-weight:500}
+			
+
+			
+			.sticker9{left: 20px; width: -300px; top :-150px; width: 30%; animation: jump 8s forwards infinite;}
+			.sticker9_1 { left: 870px; width: -300px; top :-150px; opacity:70%; width: 10%;
+				animation: goback 2s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker9_2{left: -300px; width: -300px; top :500px; width: 40%;
+			animation: goback8 4s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker9_3{left: 460px; width: -300px; top :50px; width: 0.5%; height: 90%;
+			animation: goback3 3s forwards infinite;}
+			.sticker9_4 { text-align: left; font-size: 1.5em; left: 400px; width: -300px; top :-120px; line-height: 2; font-weight:400}
+			
+			.sticker9_5 { text-align: left; font-size: 1.5em; left: 530px; width: -300px; top :100px; line-height: 2; font-weight:400}
+			.sticker9_5_1 { text-align: left; font-size: 1.5em; left: 630px; width: -300px; top :100px; line-height: 2; font-weight:400}
+			.sticker9_5_1_1 { text-align: left; font-size: 1em; left: 680px; width: -300px; top :640px; line-height: 2; font-weight:400}
+			.sticker9_6 { text-align: left; font-size: 1.5em; left: 850px; width: -300px; top :100px; line-height: 2; font-weight:400}
+			.sticker9_6_1 { text-align: left; font-size: 1.5em; left: 940px; width: -300px; top :100px; line-height: 2; font-weight:400}
+			.sticker9_7 { text-align: left; font-size: 1.5em; left: 1090px; width: -300px; top :100px; line-height: 2; font-weight:400;}
+			
+			
+			.sticker10 { left: 0px; width: -300px; top :-700px; width: 8%; height: 200%; animation: goback6 4s forwards infinite;}
+			.sticker10_1 { text-align: left; font-size: 1.7em; left: 400px; width: -300px; top :200px; line-height: 2; font-weight: 600;}
+			.sticker10_2 { left: 930px; width: -300px; top :200px; opacity:60%;
+					width: 35%; animation: goback 3s infinite cubic-bezier(.2,.6,.41,.8);}
+			
+
+			.sticker11 { left: 300px; width: -300px; top :-155px; width: 55% }
+			.sticker11_1 { left: 880px; width: -300px; top :200px; width: 40%; opacity: 70%; animation: stay 2.5s forwards infinite;}
+			.sticker11_2 { left: -40px; width: -300px; top :370px; width: 8%; z-index: 1000; animation: goback8 4s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker11_3 { left: -40px; width: -300px; top :570px; width: 3%; animation: goback4 3s infinite cubic-bezier(.2,.6,.41,.8); }
+			.sticker11_4 { left: -10px; width: -300px; top :650px; width: 40%; animation: goback 4s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker11_5 { left: -200px; width: -300px; top :720px; opacity:70%; width: 35%;
+				animation: goback2 2s infinite cubic-bezier(.2,.6,.41,.8); }
+			.sticker11_6 { text-align:center; left:70px; width: -300px; top :800px; font-size: 2em; line-height: 2; font-weight:500;}
+			
+
+			
+			
+			.sticker12_1 { left: 870px; width: -300px; top :-50px; opacity:100%; width: 10%; animation: goback3 3s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker12_2 { left: 400px; width: -300px; top :-1000px; opacity:100%; width: 35%;  animation:goback12 10s infinite cubic-bezier(.2,.6,.41,.8) ;}
+			.sticker12_3 {text-align:center; left:330px; width: -300px; top :30px; font-size: 1.5em; line-height: 1.8; font-weight:500; z-index: 100 ;}
+
+			.sticker12_4 { left: 190px; width: -300px; top :150px; opacity:100%; width: 12%; animation: jump2 4s forwards infinite linear;}
+			.sticker12_5 { left: 1235px; width: -300px; top :195px; opacity:100%; width: 5%;animation: jump2 3s forwards infinite linear;  }
+			
+			.sticker12_6 { text-align: left; font-size: 1.3em; left: 385px; width: -300px; top :160px; line-height: 2; font-weight:400; animation: stay 3s forwards infinite;font-weight:500;}
+			.sticker12_7  { text-align: left; font-size: 1.3em; left: 450px; width: -300px; top :110px; line-height: 2; font-weight:400; animation: stay 3s forwards infinite;font-weight:500;}
+			.sticker12_8  { text-align: left; font-size: 1.3em; left: 140px; width: -300px; top :210px; line-height: 2; font-weight:400; animation: stay 3s forwards infinite;font-weight:500;}
+			.sticker12_9  { text-align: left; font-size: 1.3em; left: 1200px; width: -300px; top :110px; line-height: 2; font-weight:400; animation: stay 3s forwards infinite;font-weight:500;}
+			.sticker12_10 { text-align: left; font-size: 1.3em; left: 1340px; width: -300px; top :160px; line-height: 2; font-weight:400; animation: stay 3s forwards infinite;font-weight:500;}
+			.sticker12_11  { text-align: left; font-size: 1.3em; left: 1200px; width: -300px; top :230px; line-height: 2; font-weight:400; animation: stay 3s forwards infinite;font-weight:500;}
+			.sticker12_12  { text-align: left; font-size: 1.3em; left: 500px; width: -300px; top :240px; line-height: 2; font-weight:400; animation: stay 3s forwards infinite;font-weight:500;}
+			.sticker12_13  { text-align: left; font-size: 1.3em; left: 370px; width: -300px; top :240px; line-height: 2; font-weight:400; animation: stay 3s forwards infinite;font-weight:500;}
+			
+			.sticker12_14  { text-align: left; font-size: 1.3em; left: 270px; width: -300px; top :370px; line-height: 2; font-weight:400; animation: stay 3s forwards infinite;font-weight:500;}
+			.sticker12_15  { text-align: left; font-size: 1.3em; left: 1240px; width: -300px; top :370px; line-height: 2; font-weight:400; animation: stay 3s forwards infinite;font-weight:500;}
+
+			
+			.sticker13{left: -600px; width: -300px; top :0px; width: 40%; animation: goback2 3.5s infinite cubic-bezier(.2,.6,.41,.8); }
+			.sticker13_1_1{left: 180px; width: -300px; top :-150px; width: 0.5%; height: 90% ; animation: goback3 3s forwards infinite;}
+			.sticker13_1{left: -300px; width: -300px; top :100px; width: 40%; animation: goback11 2s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker13_2 { text-align: left; font-size: 1.3em; left: 750px; width: -300px; top :-150px; line-height: 2; font-weight:400}
+			.sticker13_3 { text-align: left; font-size: 1.5em; left: 300px; width: -300px; top :250px; line-height: 2; font-weight:400; animation: stay 2.5s forwards infinite;}
+			.sticker13_3_1 { text-align: left; font-size: 1.5em; left: 400px; width: -300px; top :345px; line-height: 2; font-weight:400}
+			.sticker13_4{left: 1100px; width: -300px; top :300px; width: 5%; animation: goback 2.8s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker13_5{left: 1100px; width: -300px; top :350px; width: 5%;animation: goback 2.8s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker13_6 { text-align: left; font-size: 1.3em; left: 900px; width: -300px; top :-150px; line-height: 2; font-weight:400; animation: stay 2.5s forwards infinite;}
+			.sticker13_6_1 { text-align: left; font-size: 1.3em; left: 1050px; width: -300px; top :-150px; line-height: 2; font-weight:400}
+			.sticker13_6_2 { left: 1500px; width: -300px; top :1050px; width: 8%;
+					animation: goback2 4s forwards cubic-bezier(.2,.6,.41,.8) infinite}
+
+			
+			.sticker14 { left: 0px; width: -300px; top :-200px; width: 8%; height: 150%; animation: goback6 4s forwards infinite;}
+			.sticker14_1 { text-align: left; font-size: 1.7em; left: 550px; width: -300px; top :400px; line-height: 2; font-weight: 600;}
+			.sticker14_2{left: -500px; width: 0px; top :-150px; width: 60%; animation: goback7 4s infinite cubic-bezier(.2,.6,.41,.8); }
+			.sticker14_3 { left: 930px; width: -300px; top :200px; opacity:70%;
+					width: 35%; animation: goback 3.5s infinite cubic-bezier(.2,.6,.41,.8);}
+			
+			
+
+			.sticker15 { left: 500px; width: -300px; top :-100px; width: 62% }
+			.sticker15_1 { left: 300px; width: -300px; top :-150px; width: 8%; animation: stay 1.5s forwards infinite;}
+			.sticker15_2 { left: 50px; width: -300px; top :-80px; width: 3%; animation: goback 3.5s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker15_3 { left: -900px; width: -300px; top :80px; width: 40%; animation: goback7 3s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker15_4 { left: -150px; width: -300px; top :150px; width: 40%; opacity: 70%; animation: goback3 5s forwards infinite;}
+
+			
+			.sticker16 { text-align:left; left:0px; width: -300px; top :600px; font-size: 2em; line-height: 2; font-weight:500; animation: stay 10s forwards infinite;}
+			
+
+			.sticker16_1 { left: 880px; width: -300px; top :0px; width: 40%; animation: goback 2.5s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker16_2 { left: 870px; width: -300px; top :70px; opacity:70%; width: 15%; animation: stay 3s forwards infinite;}
+			.sticker16_3 { text-align:center; left:460px; width: -300px; top :250px; font-size: 1.5em; line-height: 2; font-weight:400; }
+			.sticker16_4{left: 220px; width: -300px; top :0px; width: 0.3%; height: 120%; animation: goback3 3.5s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker16_5{left: -1000px; width: -300px; top :230px; width: 40%; animation: goback8 4s infinite cubic-bezier(.2,.6,.41,.8);}
+
+			
+			
+			.sticker17 { text-align: left; font-size: 1.3em; left: 820px; width: -300px; top :-180px; line-height: 2; font-weight:400}
+			.sticker17_0 { text-align: left; font-size: 1em; left: 820px; width: -300px; top :-150px; line-height: 2; font-weight:400}
+			.sticker17_1 { text-align: left; font-size: 1.5em; left: 20px; width: -300px; top :120px; line-height: 2; font-weight:400; animation: stay 3s forwards infinite;}
+			.sticker17_1_1 { text-align: left; font-size: 1.5em; left: 100px; width: -300px; top :120px; line-height: 2; font-weight:400}
+			.sticker17_2 { text-align: left; font-size: 1.3em; left: 130px; width: -300px; top :820px; line-height: 2; font-weight:400}
+			.sticker17_2_1 { text-align: left; font-size: 1.3em; left: 260px; width: -300px; top :820px; line-height: 2; font-weight:400}
+			.sticker17_3 { text-align: left; font-size: 0.9em; left: 130px; width: -300px; top :960px; line-height: 2; font-weight:400; animation: stay 4s forwards infinite;}
+			.sticker17_4 { left: 850px; width: -300px; top :850px; width: 3%;animation: goback4 4s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker17_5 { left: 880px; width: -300px; top :1000px; width: 35%; animation: goback 2.5s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker17_6 { left: -500px; width: -300px; top :-20px; width: 40%; opacity: 50%; animation:goback11 5s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker17_7{left: 750px; width: -300px; top :-150px; width: 0.5%; height: 60% ; animation: goback3 3s forwards infinite; opacity: 70%}
+			.sticker17_8 { left: -500px; width: -300px; top :70px; width: 40%; opacity: 50%; animation:goback4 5s infinite cubic-bezier(.2,.6,.41,.8);}
+			.sticker17_9{left: 600px; width: 0px; top :650px; width: 60%; animation: goback 5s infinite cubic-bezier(.2,.6,.41,.8); }
+			
+
+			.sticker18 { left: 550px; width: -300px; top :200px; width: 8%; height: 50%; animation: goback4 5s infinite cubic-bezier(.2,.6,.41,.8); }
+			.sticker18_0 { text-align: center; font-size: 0.9em; left: 505px; width: -300px; top :700px; line-height: 2; font-weight:300}
+
+			
+			.sticker19 { text-align: left; font-size: 1.3em; left: 290px; width: -300px; top :520px; line-height: 2; font-weight:400; animation: stay 3s forwards infinite;}
+			.sticker19_1 { text-align: left; font-size: 1.3em; left: 1160px; width: -300px; top :520px; line-height: 2; font-weight:400; animation: stay 3s forwards infinite;}
+			.sticker19_2 { text-align: left; font-size: 1.3em; left: 130px; width: -300px; top :300px; line-height: 2; font-weight:400; animation: stay 3s forwards infinite; font-weight:500;}
+			.sticker19_3 { text-align: left; font-size: 1.3em; left: 310px; width: -300px; top :100px; line-height: 2; font-weight:400; animation: stay 3s forwards infinite;font-weight:500;}
+			.sticker19_4 { text-align: left; font-size: 1.3em; left: 350px; width: -300px; top :200px; line-height: 2; font-weight:400; animation: stay 3s forwards infinite;font-weight:500;}
+			.sticker19_5 { text-align: left; font-size: 1.3em; left: 750px; width: -300px; top :0px; line-height: 2; font-weight:400; animation: stay 3s forwards infinite;font-weight:500;}
+			.sticker19_6 { text-align: left; font-size: 1.3em; left: 1210px; width: -300px; top :350px; line-height: 2; font-weight:400; animation: stay 3s forwards infinite;font-weight:500;}
+			.sticker19_7 { text-align: left; font-size: 1.3em; left: 870px; width: -300px; top :200px; line-height: 2; font-weight:400; animation: stay 3s forwards infinite;font-weight:500;}
+
+
+			.sticker20 {left: 75px; top :250px;  width: 90%; animation: stay 4s forwards infinite;}
+			.sticker20_1 {font-size: 1em; left: 240px; width: -300px; top :600px;  font-weight:200;}
+			.sticker20_2 {font-size: 1em; left: 440px; width: -300px; top :600px;  font-weight:200;}
+			.sticker20_3 {font-size: 1em; left: 580px; width: -300px; top :600px;  font-weight:200;}
+			.sticker20_4 {font-size: 1em; left: 730px; width: -300px; top :600px;  font-weight:200;}
+			.sticker20_5 {font-size: 1em; left: 890px; width: -300px; top :600px;  font-weight:200;}
+			
+
+
+			.flex {display: flex;}
+			.width50 {width: 50%;}
+			.row0{font-size: 1em;}
+
+			.back1{background: url(img3.jpg); background-size: 100% auto;
+	 			background-attachment: fixed; }
+
+			
+
+			nav{position: fixed; top: 3vh; z-index: 30; left: 3vh; }
+			a{ font-size: 1.2em;  font-weight:600; color: white; text-decoration: none; line-height: 2;}
+			a:hover{ font-size: 1.4em;  font-weight:600; color: black; text-decoration: none;}
+			*{scroll-behavior: smooth;}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<a href="#s5">SPACE X</a><br>
+		<a href="#s1">SERVICE</a><br>
+		<a href="#s2">EARTH</a><br>
+		<a href="#s3">MOON</a><br>
+		<a href="#s4">MARS</a><br>
+		<a href="#s6">COMPANY</a>
+	</nav>
+	
+	<section class="row2" id="s5"><img src="img1.jpg">
+		<div class="row ">
+			<img src= "line1.png" class="absolute sticker1">
+			<img src= "line2.png" class="absolute sticker1_1">
+			<img src= "line3.png" class="absolute sticker1_2">
+			<img src= "line4.png" class="absolute sticker1_3">
+			</div>
+	</section>
+
+	<section class="black">
+		<div class="row row2 ">
+			<header> <h1 class="sticker2_7 ">‘우주를 여행하는 문명, 여러 행성에 존재하는 인류’</h1> </header>
+			<p>Space X는 2002년 설립된 민간 항공우주 기업입니다.<br>
+			재활용 가능한 로켓 발사 시스템을 통해 안정적인 우주 여행 서비스를 제공합니다.</p>
+
+			<img src= "line10.png" class="absolute sticker2">
+			<img src= "line11.png" class="absolute sticker2_1">
+			<img src= "line8.png" class="absolute sticker2_2">
+			<img src= "line9.png" class="absolute sticker2_3">
+			<img src= "line7.png" class="absolute sticker2_4">
+			<img src= "line5.png" class="absolute sticker2_5">
+			<img src= "line6.png" class="absolute sticker2_6">
+		</div>
+	</section>
+
+	<section class="black">
+		<div class="row1 relative row9 ">
+			<p></p>
+			
+			<p class=" absolute sticker3 ">History<br><br>
+			2008년 9월 28일 <br>
+			2010년 12월 09일<br>
+			2012년 5월 25일<br>
+			2017년 6월 03일<br> 
+			2018년 2월 02일 <br>
+			2020년 5월 30일 <br> 
+			2023년 12월 27일<br>
+			2025년 9월 29일 <br> 
+			2033년 3월 09일 <br>
+			2038년 10월 26일 </p>
+			
+			<p class=" absolute sticker3_1   "><br><br>
+			지구 궤도에 도달한 최초의 민간 액체 로켓 (팰컨1 4차 발사)<br>
+			우주선을 성공적으로 발사, 비행, 회수한 최초의 민간 기업 (팰컨9 2차 발사)<br>
+			2일국제우주정거장으로 우주선을 보낸 최초의 민간 기업 (팰컨9 3차 발사)<br>
+			일상업용 화물 운송 우주선의 재사용 비행에 최초로 성공 (팰컨9 35차 발사)<br> 
+			팰컨 헤비 로켓의 발사 및 회수에 최초로 성공 (팰컨 헤비 1차 발사) <br>
+			국제우주정거장으로 우주인을 보낸 최초의 민간 기업 (팰컨9 85차 발사)<br> 
+			사상 첫 민간 우주 비행 프로젝트 ‘Dear Moon’ 성공 (우주선 스타쉽)<br>
+			민간인 대상의 지구, 달 여행 서비스 시작<br> 
+			화성 이주 프로젝트 첫 성공<br>
+			민간인 대상의 화성 여행 서비스 시작</p>
+			<img src= "block2.png" class="absolute sticker3_2">
+			<img src= "block1.png" class="absolute sticker3_3">
+		</div>
+	</section>
+
+	<section class="black" id="s1">
+		<div class="row relative row4">
+			<p class="absolute sticker4_7">SERVICE</p>
+			<p class="absolute sticker4">신장 50M 직경 9M<br> 탑승 총 인원 80~120명</p>
+			<p class="flex row5 "><br><br><br><br>1. STARSHIP <br><br>
+			스페이스X의 대표적인 기술로 만들어낸 재활용 가능한 우주 발사체입니다.<br>
+			인류의 화성 이주 및 우주 여행을 담당합니다. </p>
+
+			<img src= "img2.png" class="absolute sticker4_1">
+			<img src= "line3.png" class="absolute sticker4_2">
+			<img src= "line4.png" class="absolute sticker4_3">
+			<img src= "line2.png" class="absolute sticker4_4">
+			<img src= "line1.png" class="absolute sticker4_5">
+			<img src= "line1.png" class="absolute sticker4_6">
+		</div>
+	</section>
+
+	<section class="black">
+		<div class="row relative row10 ">
+			
+			<img src= "img3.png" class="absolute sticker5">
+			<img src= "line8.png" class="absolute sticker5_1">
+			<img src= "line10.png" class="absolute sticker5_2">
+			<img src= "line9.png" class="absolute sticker5_3">
+			<p class="absolute sticker5_4 ">2. DRAGON<br><br>
+			NASA와의 상업용 궤도 운송 서비스를 담당하고 있습니다.<br>
+			우주선 드래곤을 통해 2012년 10월 부터 국제 우주 정거장 (ISS)에
+			화물 수송 서비스를 담당하고 있습니다.</p>
+			
+			<p class="absolute sticker5_5">신장 8.1M 직경 4M <br> 탑승 총 인원 7명</p>
+		</div>
+	</section>
+
+	<section class="row2"><img src="img2.jpg">
+			<div class="row relative row7">
+				<img src= "line7.png" class="absolute sticker6">
+				<img src= "line6.png" class="absolute sticker6_1">
+				<img src= "line3.png" class="absolute sticker6_2">
+			
+			<p class="absolute sticker6_3">3. 위성인터넷 스타링크<br><br>
+			아프리카 빈곤 지역, 극지방에 거주하는 사람들을 위한 광대역 인터넷 서비스입니다.<br>
+			낮은 궤도에 배치된 인공위성은 스타링크 고객들에게 안정적이고 넓은 인터넷 서비스를 제공하게합니다.<br> Space X의 스타링크 서비스는 인터넷 연결의 불완전함을 해결합니다.</p>
+			</div>
+	</section>
+	
+	<section class="row2" id="s2"> 
+			<div class="row relative row9">
+				<img src= "block2.png" class="absolute sticker7">
+				<p class="absolute sticker7_1">EARTH</p>
+				<img src= "line1.png" class="absolute sticker7_2">
+			</div>
+	</section>
+
+	<section class="row2"> 
+			<div class="row relative row7">
+			<img src= "img4.png" class="absolute sticker8">
+			<img src= "line3.png" class="absolute sticker8_1">
+			<img src= "line2.png" class="absolute sticker8_2">
+			<img src= "line1.png" class="absolute sticker8_3">
+
+			<p class="absolute sticker8_4 sticker2_7">‘지구에서 지구로 !<br> 
+			우주선은 우리에게 가장 빠른 교통수단 입니다.’
+			
+
+				
+			</div>
+	</section>
+
+	<section class="row2"> 
+			<div class="row relative row10">
+				<img src= "img8.png" class="absolute sticker9">
+				<img src= "line9.png" class="absolute sticker9_1">
+				<img src= "line6.png" class="absolute sticker9_2">
+				<img src= "line7.png" class="absolute sticker9_3">
+				
+				<p class="absolute sticker9_4 sticker2_7">탑승 우주선 DRAGON<br><br> 
+				
+				<p class="absolute sticker9_5 ">  
+				출발지
+				<br><br>    
+				한국 <br> 한국 <br>한국 <br>한국 <br>한국 <br>한국<br>한국<br>한국<br>한국<br>한국<br> </p>
+
+				<p class="absolute sticker9_5_1 ">  
+				도착지
+				<br><br>    
+				중국  <br> 일본  <br>홍콩  <br>방콕 <br>싱가포르  <br>
+				두바이 <br>런던  <br>파리  <br> 뉴욕  <br>한국  <br> </p>
+				<p class="absolute sticker9_5_1_1 ">  
+				(지구 한 바퀴)  <br> </p>
+
+				<p class="absolute sticker9_6">
+				통화
+				<br><br> 
+				KRW<br> KRW<br>KRW<br>KRW<br>KRW<br>KRW<br>
+				KRW<br>KRW<br>KRW<br>KRW<br> </p>
+
+				<p class="absolute sticker9_6_1">
+				운임(편도)
+				<br><br> 
+				342,000<br> 570,000 <br>912,000 <br>1,482,000 <br>1,596,000 <br>2,451,000 <br>
+				3,135,000 <br>3,192,000 <br>3,705,000 <br>5,130,000 <br> </p>
+
+				<p class="absolute sticker9_7"> 
+				소요 시간 
+				<br><br>  
+   				6min <br> 10min <br>16min <br>26min <br>28min <br>43min <br>55min <br>56min <br>
+				65min  <br>90min <br> </p>
+			</div>
+	</section>
+	
+	<section class="row2" id="s3"> 
+			<div class="row relative row7">
+				<img src= "block2.png" class="absolute sticker10">
+				<p class="absolute sticker10_1">MOON</p>
+				<img src= "line8.png" class="absolute sticker10_2">
+			</div>
+	</section>
+
+	<section class="row2"> 
+			<div class="row relative row11">
+				<img src= "img5.png" class="absolute sticker11">
+				<img src= "line1.png" class="absolute sticker11_1">
+				<img src= "line3.png" class="absolute sticker11_2">
+				<img src= "line4.png" class="absolute sticker11_3">
+				<img src= "line2.png" class="absolute sticker11_4">
+				<img src= "line1.png" class="absolute sticker11_5">
+				<p class="row8 absolute sticker11_6 sticker2_7">‘우리가 보는 밤 하늘의 별들은 우주의 팽창으로 인해 점점 멀어져 가고 있습니다.<br>하지만 달은 영원할 것입니다. 달은 지구에게 변함없는 존재입니다.’</p>
+			</div>
+	</section>
+
+	<section class="row2"> 
+			<div class="row relative row7">
+				<img src= "img9.png" class="absolute sticker12_2">
+				<p class="row8 absolute sticker12_3">‘달’은<br><br>
+				우주에서 인류가 방문한 첫 번째 천체입니다.<br>
+				달의 공전과 자전 주기는 약 27.3일 입니다.<br><br>
+				그렇기 때문에 달은 늘 한쪽 면만 지구를 향하고 있습니다.<br>
+				여행을 통해 그동안 보지 못했던 달의 뒷모습을 확인하세요.</p>
+				<img src= "line9.png" class="absolute sticker12_1">
+			</div>
+	</section>
+
+	<section class="black"> 
+			<div class="relative"><img src="img6.png">
+				<img src= "img12.png" class="absolute sticker12_4">
+				<img src= "img13.png" class="absolute sticker12_5">
+				<p class="absolute sticker12_6">01
+				<p class="absolute sticker12_7">02
+				<p class="absolute sticker12_8">03
+				<p class="absolute sticker12_9">04
+				<p class="absolute sticker12_10">05
+				<p class="absolute sticker12_11">06
+				<p class="absolute sticker12_12">07
+				<p class="absolute sticker12_13">08
+				<p class="absolute sticker12_14">EARTH
+				<p class="absolute sticker12_15">MOON
+
+			</div>
+	</section>
+
+	<section class="row2"> 
+			<div class="row relative row11">
+				<img src= "line5.png" class="absolute sticker13">
+				<img src= "line7.png" class="absolute sticker13_1_1">
+				<img src= "line6.png" class="absolute sticker13_1">
+
+				<p class="absolute sticker13_2">00.<br> 3주간의 지상 훈련에 참가합니다.<br>원심분리기를 통한 중력가속도 훈련<br>물 속에서의 우주 유영 훈련<br> 심리적 압박감을 대비한 훈련 </p>
+
+				<p class="absolute sticker13_3">달 비행 여행 경로<br><br>
+				01. <br>  
+				02. <br> 
+				03. <br>
+				04. <br>
+				05. <br>
+				06. <br>
+				07. <br>
+				08. </p>
+				<p class="absolute sticker13_3_1">
+				STARSHIP 우주선이 이륙합니다.<br>  
+				코어 우주선에서 서브 우주선이 분리됩니다.<br> 
+				진공 엔진을 사용하여 달 여행 궤도에 진입합니다.<br>
+				3일이 지나면 달에 가까이 접근합니다.<br>
+				우주선이 달과 가장 가까워지는 지점입니다. 달의 뒷모습을 볼 수 있습니다.<br>
+				지구로 돌아가는 궤도에 진입합니다.<br>
+				방열판을 사용하여 지구 대기권으로 진입합니다.<br>
+				제어 화상 시스템으로 안전하게 지구에 착륙합니다. </p>
+
+				<img src= "line12.png" class="absolute sticker13_4">
+				<img src= "line13.png" class="absolute sticker13_5">
+				<img src= "line3.png" class="absolute sticker13_6_2">
+
+				
+			</div>
+	</section>
+	
+	<section class="row2">
+		<div class="row relative row2">
+			<img src="img10.png" class="absolute sticker14_2">
+			<p class="absolute sticker13_6">탑승 우주선<br> 소요 시간 <br> 비용 </p>
+			<p class="absolute sticker13_6_1">STARSHIP <br> 6박 7일<br> 800,000,000 ₩</p>
+			
+		</div> 
+	</section>
+	
+	<section class="row2" id="s4"> 
+			<div class="row relative row7">
+				
+				<img src= "block2.png" class="absolute sticker14">
+				<p class="absolute sticker14_1">MARS</p>
+				<img src= "line1.png" class="absolute sticker14_3">
+			</div>
+	</section>
+
+	<section class="row2"> 
+			<div class="row relative row10">
+				<img src= "img1.png" class="absolute sticker15">
+				<img src= "line3.png" class="absolute sticker15_1">
+				<img src= "line4.png" class="absolute sticker15_2">
+				<img src= "line2.png" class="absolute sticker15_3">
+				<img src= "line1.png" class="absolute sticker15_4">
+				<p class="absolute sticker16">‘새로운 행성에서 최초의 인류가 되어보세요.<br> 모든 것을 처음부터 시작할 수 있습니다.’</p>
+			</div>
+	</section>
+
+	<section class="row2"> 
+			<div class="row relative row10">
+				<img src= "line5.png" class="absolute sticker16_1">
+				<img src= "line9.png" class="absolute sticker16_2">
+				<p class="absolute sticker16_3">‘화성’의<br><br>
+				자전 주기는 24시간 37분으로 지구의 하루와 거의 비슷합니다.<br> 
+				12시간 정도의 낮과 밤이 번갈아 나타납니다.<br><br>
+				지구가 23.5도 기울어져 있는 자전축으로 계절의 변화가 생기는것 처럼,<br> 
+				화성의 자전축도 25도 정도 기울어져 있어 지구처럼 4계절이 나타납니다. </p>
+
+				<img src= "line10.png" class="absolute sticker16_4">
+				<img src= "line6.png" class="absolute sticker16_5">
+			</div>
+	</section>
+
+	<section class="black"> 
+			<div class="relative"><img src="img7.png">
+				<p class="absolute sticker19">EARTH
+				<p class="absolute sticker19_1">MARS
+				<p class="absolute sticker19_2">01
+				<p class="absolute sticker19_3">02
+				<p class="absolute sticker19_4">03
+				<p class="absolute sticker19_5">04
+				<p class="absolute sticker19_6">05
+				<p class="absolute sticker19_7">06
+			</div>
+	</section>
+
+	<section class="row2"> 
+			<div class="row relative row11">
+				<img src= "line7.png" class="absolute sticker17_7">
+				<p class="absolute sticker17">00.<br> 3개월의 지상 훈련에 참가합니다.
+				<p class="absolute sticker17_0"><br><br>원심분리기를 통한 중력가속도 훈련<br>물 속에서의 우주 유영 훈련<br>심리적 압박감 대비한 훈련<br>화성과 비슷한 환경에서의 합숙훈련</p>
+
+				<p class="absolute sticker17_1">화성 여행 경로<br><br>
+
+				01.  <br>  
+				02. <br>
+				03. <br>
+				04. <br>
+				05. <br>
+				06. </p>
+
+				<p class="absolute sticker17_1_1"><br><br>
+
+				STARSHIP 우주선이 이륙합니다. 코어 우주선에서 서브 우주선이 분리됩니다.<br>  
+				우주선의 충전을 도와주는 유조선이 추가로 발사됩니다.<br>
+				STARSHIP 우주선에 도착한 충전 유조선을 통해 스타쉽을 재충전합니다.<br>
+				공급 받은 연료로 지구 궤도에서 화성으로 여행이 시작됩니다.<br>
+				약 6개월의 우주선 비행이 끝나면 화성 표면에 도착하게 됩니다.<br>
+				화성의 지역 자원인 이산화탄소를 활용하여 우주선의 연료를 충전합니다.</p>
+
+				
+
+				<p class="absolute sticker17_2">탑승 우주선<br>  
+				소요 시간<br>비용</p>
+				<p class="absolute sticker17_2_1">STARSHIP<br>  
+				약 6개월<br>248억 400,000,000 ₩ (편도)</p>
+				<p class="absolute sticker17_3">*지구와 화성이 가까워 지는 시기(근일점)에만 여행이 가능합니다.*</p>
+				<img src="img11.png" class="absolute sticker17_9">
+
+				<img src= "line4.png" class="absolute sticker17_4">
+				<img src= "line2.png" class="absolute sticker17_5">
+				<img src= "line5.png" class="absolute sticker17_6">
+				<img src= "line6.png" class="absolute sticker17_8">
+				
+			</div>
+	</section>
+
+	
+	<section class="row" id="s6" > 
+		<div class="row relative row10 ">
+		<img src="img4.jpg" class="absolute sticker20" >
+		
+		<p class="absolute sticker20_1" > SPACEX © 2039</p>
+		<p class="absolute sticker20_2" ><a href=https://twitter.com/spacex > twitter</p>
+		<p class="absolute sticker20_3" ><a href=https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA >youtube</p>
+
+		<p class="absolute sticker20_4" ><a href=https://www.instagram.com/spacex/>instagram</p>
+		<p class="absolute sticker20_5" ><a href=https://www.spacex.com/>contact</a></p>
+		
+		</div>
+	</section>
+		
+
+	<section class="row2 "> 
+			<div class="row relative row11">
+				<img src= "block2.png" class="absolute sticker18">
+				<p class="absolute sticker18_0">image NASA / Google<br><br><br>Aram Kim 2021 Visual Design <br> clamp9011@gmail.com </p>
+			
+			</div>
+	</section>
+	
+	<section class="row2"> 
+			<div class="row relative row2">
+			</div>
+	</section>
+
+
+	
+
+
+
+</body>
+</html>
